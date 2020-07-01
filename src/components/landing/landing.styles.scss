@@ -1,0 +1,56 @@
+.landing {
+    width: 100%;
+    height: 105vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+.landing-img {
+    width: 100%;
+    height: 100%;
+    // filter: blur(7px);
+    background-size: cover;
+    // height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -50;
+}
+.landing-showcase {
+    width: 60vw;
+    height: 75vh;
+    backdrop-filter: blur(10px);
+    border: 7px double white;
+    border-radius: 3px;
+    position: relative;
+}
+
+.showcase-spade-logo {
+    height: 100%;
+    transform: scale(1.3);
+    position: relative;
+    z-index: -1;
+}
+
+.spade-btns {
+    width: 100%;
+    height: 10%;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+
+    .spade-btn {
+        flex: 1;
+        background: transparent;
+        cursor: pointer;
+        border: none;
+        color: white;
+        font-size: 1.05rem;
+
+        &:hover {
+            color: rgb(20, 40, 154);
+        }
+    }
+}
