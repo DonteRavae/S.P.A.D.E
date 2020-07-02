@@ -1,14 +1,15 @@
 //React
 import React from 'react';
+//Components
+import ShowcaseButton from '../showcase-button/showcase-button.component';
 //Assets
 import dominicBkgImage from '../../assets/20200613_202127.jpg';
 import spadeLogo from '../../assets/SPADE FINAL SVG.svg';
-import ShowcaseButton from '../showcase-button/showcase-button.component';
 //Styles
 import './landing.styles.scss';
 
 class Landing extends React.Component {
-    state = {
+state = {
         backgroundImages: {
             0: dominicBkgImage,
         }

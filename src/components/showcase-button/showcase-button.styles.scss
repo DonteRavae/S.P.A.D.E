@@ -1,0 +1,57 @@
+.showcase-btn {
+    flex: 1;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    button {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        background: transparent;
+        cursor: pointer;
+        border: none;
+        font-size: 1.55rem;
+        line-height: 24px;
+        color: white;
+        text-shadow: 0 0 1px white;
+        font-family: 'Kavivanar', cursive;
+        border-radius: 2px;
+
+        &:hover {
+            color: white;
+            box-shadow: 0 0 5px white;
+            ;
+            // border: 2px solid rgb(20, 40, 154)
+        }
+
+    }
+    
+
+    .bar {
+        width: 90%;
+        height: 0%;
+        position: absolute;
+        bottom: 0;
+        background-color: rgb(20, 40, 154);
+        z-index: 2;
+        transition: height 0.15s ease-out 0.05s;
+    }
+
+    &:hover {
+
+        .bar {
+            height: 8%;
+            // animation: barRaise 0.25s 0.2s ease-out forwards;
+        }
+    }
+    
+}
+
+@keyframes barRaise {
+    from { height: 0%; }
+
+    to { height: 8%; }
+}

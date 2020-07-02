@@ -40,17 +40,4 @@
     position: fixed;
     bottom: 0;
     display: flex;
-
-    .spade-btn {
-        flex: 1;
-        background: transparent;
-        cursor: pointer;
-        border: none;
-        color: white;
-        font-size: 1.05rem;
-
-        &:hover {
-            color: rgb(20, 40, 154);
-        }
-    }
 }
