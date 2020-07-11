@@ -21,10 +21,11 @@
 .landing-showcase {
     width: 60vw;
     height: 75vh;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(20px);
     border: 7px double white;
-    border-radius: 3px;
+    border-radius: 8px;
     position: relative;
+    background: rgba(0, 0, 0, 0.35);
 }
 
 .showcase-spade-logo {

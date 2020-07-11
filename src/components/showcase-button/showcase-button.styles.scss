@@ -5,6 +5,10 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    // border: 2px solid white;
+    border-top: none;
+    border-bottom: none;
+    margin: 0 1px;
 
     button {
         width: 100%;
@@ -12,46 +16,53 @@
         padding: 10px;
         background: transparent;
         cursor: pointer;
-        border: none;
-        font-size: 1.55rem;
         line-height: 24px;
-        color: white;
-        text-shadow: 0 0 1px white;
-        font-family: 'Kavivanar', cursive;
+        color: silver;
+        font-family: 'Quicksand', sans-serif;
+        font-size: 1.35rem;
         border-radius: 2px;
+        border: none;
+        z-index: -2px;
+    }
 
-        &:hover {
-            color: white;
-            box-shadow: 0 0 5px white;
-            ;
-            // border: 2px solid rgb(20, 40, 154)
-        }
+    &:first-child {
+        border-left: none;
+    }
 
+    &:last-child {
+        border-right: none;
     }
     
 
     .bar {
-        width: 90%;
+        width: 100%;
         height: 0%;
         position: absolute;
         bottom: 0;
         background-color: rgb(20, 40, 154);
-        z-index: 2;
-        transition: height 0.15s ease-out 0.05s;
+        z-index: -1;
+        // transition: height 0.15s ease-in-out 0.05s;
     }
 
     &:hover {
 
+        button {
+            color:white;
+        }
+
         .bar {
-            height: 8%;
-            // animation: barRaise 0.25s 0.2s ease-out forwards;
+            animation: raiseBar 0.2s ease-in-out forwards;
+        }
+    }
+
+    @keyframes raiseBar {
+        from {
+            height: 0%;
+        }   
+
+        to {
+            height: 7%;
         }
     }
     
-}
-
-@keyframes barRaise {
-    from { height: 0%; }
-
-    to { height: 8%; }
 }

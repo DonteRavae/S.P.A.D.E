@@ -8,6 +8,15 @@ import spadeLogo from '../../assets/SPADE FINAL SVG.svg';
 //Styles
 import './landing.styles.scss';
 
+//Landing State
+type LandingState = {
+
+}
+//Landing Props
+interface LandingProps  {
+
+}
+
 class Landing extends React.Component {
 state = {
         backgroundImages: {
